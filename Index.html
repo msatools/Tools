@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a collection of powerful tools for bloggers and developers.">
+  <meta name="keywords" content="Blogger Tools, Template Generator, SEO Tools, Web Development">
+  <meta name="author" content="Your Name">
+  <title>Tools Website - Home</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #007BFF, #00a8ff);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #0056b3;
+    }
+
+    /* Main Content */
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Tools Section */
+    .tools-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tool-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .tool-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .tool-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    .tool-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .tool-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .tool-card a:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .tools-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 40px 15px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .tool-card h3 {
+        font-size: 1.3rem;
+      }
+
+      .tool-card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Tools Website</h1>
+    <p>Explore a collection of powerful tools for bloggers and developers.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Tools Section -->
+    <section id="tools">
+      <h2>Our Tools</h2>
+      <div class="tools-section">
+        <!-- Blogger Template Generator Tool -->
+        <div class="tool-card">
+          <img src="https://via.placeholder.com/80" alt="Template Generator">
+          <h3>Blogger Template Generator</h3>
+          <p>Create fully responsive, SEO-optimized Blogger templates with ease.</p>
+          <a href="/template-generator">Use Tool</a>
+        </div>
+
+        <!-- SEO Analyzer Tool -->
+        <div class="tool-card">
+          <img src="https://via.placeholder.com/80" alt="SEO Analyzer">
+          <h3>SEO Analyzer</h3>
+          <p>Analyze and optimize your website for better search engine rankings.</p>
+          <a href="/seo-analyzer">Use Tool</a>
+        </div>
+
+        <!-- Image Compressor Tool -->
+        <div class="tool-card">
+          <img src="https://via.placeholder.com/80" alt="Image Compressor">
+          <h3>Image Compressor</h3>
+          <p>Compress images without losing quality for faster website loading.</p>
+          <a href="/image-compressor">Use Tool</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Tools Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
