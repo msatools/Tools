@@ -213,15 +213,149 @@
   <main>
     <!-- Tools Section -->
     <section id="tools">
-      <h2>Our Tools</h2>
-      <div class="tools-section">
+    <h2>Our Tools</h2>
+    <div class="tools-section">
         <!-- Blogger Template Generator Tool -->
         <a href="/template-generator" class="tool-card">
-          <img src="https://via.placeholder.com/80" alt="Template Generator">
-          <h3>Blogger Template Generator</h3>
-          <p>Create fully responsive, SEO-optimized Blogger templates with ease.</p>
-          <span class="tool-link">Use Tool</span>
+            <div class="icon-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067555.png" alt="Template Generator" class="tool-icon">
+            </div>
+            <div class="tool-content">
+                <h3>Blogger Template Generator</h3>
+                <p>Create fully responsive, SEO-optimized Blogger templates with ease.</p>
+                <div class="tool-footer">
+                    <span class="tool-link">Get Started 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                    </span>
+                    <div class="hover-effect"></div>
+                </div>
+            </div>
         </a>
+    </div>
+</section>
+
+<style>
+.tool-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(0,123,255,0.1);
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,123,255,0.15);
+}
+
+.icon-container {
+    background: rgba(0,123,255,0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.tool-icon {
+    width: 50px;
+    height: 50px;
+    filter: invert(35%) sepia(90%) saturate(2591%) hue-rotate(202deg) brightness(98%) contrast(101%);
+}
+
+.tool-content h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.tool-content p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tool-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tool-link {
+    color: #007bff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.arrow-icon {
+    fill: currentColor;
+    transition: transform 0.2s ease;
+}
+
+.tool-card:hover .arrow-icon {
+    transform: translateX(3px);
+}
+
+.hover-effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #007bff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover .hover-effect {
+    transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tool-card {
+        padding: 20px;
+    }
+    
+    .icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tool-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .tool-content p {
+        font-size: 0.9rem;
+    }
+}
+</style>
 
         <!-- SEO Analyzer Tool -->
         <a href="/seo-analyzer" class="tool-card">
