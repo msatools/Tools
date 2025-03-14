@@ -26,13 +26,13 @@
     header {
       background: linear-gradient(135deg, #007BFF, #00a8ff);
       color: #fff;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 10px;
     }
 
@@ -55,7 +55,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
     }
 
     nav ul li {
@@ -66,7 +66,7 @@
       text-decoration: none;
       color: #007BFF;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.1rem;
       transition: color 0.3s ease;
     }
 
@@ -85,17 +85,20 @@
     .tools-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      gap: 25px;
       margin-top: 30px;
     }
 
     .tool-card {
       background: #fff;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 12px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .tool-card:hover {
@@ -110,7 +113,7 @@
     }
 
     .tool-card h3 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 10px;
       color: #007BFF;
     }
@@ -121,7 +124,7 @@
       margin-bottom: 20px;
     }
 
-    .tool-card a {
+    .tool-card .tool-link {
       display: inline-block;
       padding: 10px 20px;
       background: #007BFF;
@@ -132,7 +135,7 @@
       transition: background 0.3s ease;
     }
 
-    .tool-card a:hover {
+    .tool-card:hover .tool-link {
       background: #0056b3;
     }
 
@@ -142,7 +145,7 @@
       color: #fff;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     footer p {
@@ -152,7 +155,7 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
       }
 
       header p {
@@ -172,15 +175,15 @@
 
     @media (max-width: 480px) {
       header {
-        padding: 40px 15px;
+        padding: 60px 15px;
       }
 
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .tool-card h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       .tool-card p {
@@ -213,28 +216,28 @@
       <h2>Our Tools</h2>
       <div class="tools-section">
         <!-- Blogger Template Generator Tool -->
-        <div class="tool-card">
+        <a href="/template-generator" class="tool-card">
           <img src="https://via.placeholder.com/80" alt="Template Generator">
           <h3>Blogger Template Generator</h3>
           <p>Create fully responsive, SEO-optimized Blogger templates with ease.</p>
-          <a href="/template-generator">Use Tool</a>
-        </div>
+          <span class="tool-link">Use Tool</span>
+        </a>
 
         <!-- SEO Analyzer Tool -->
-        <div class="tool-card">
+        <a href="/seo-analyzer" class="tool-card">
           <img src="https://via.placeholder.com/80" alt="SEO Analyzer">
           <h3>SEO Analyzer</h3>
           <p>Analyze and optimize your website for better search engine rankings.</p>
-          <a href="/seo-analyzer">Use Tool</a>
-        </div>
+          <span class="tool-link">Use Tool</span>
+        </a>
 
         <!-- Image Compressor Tool -->
-        <div class="tool-card">
+        <a href="/image-compressor" class="tool-card">
           <img src="https://via.placeholder.com/80" alt="Image Compressor">
           <h3>Image Compressor</h3>
           <p>Compress images without losing quality for faster website loading.</p>
-          <a href="/image-compressor">Use Tool</a>
-        </div>
+          <span class="tool-link">Use Tool</span>
+        </a>
       </div>
     </section>
   </main>
